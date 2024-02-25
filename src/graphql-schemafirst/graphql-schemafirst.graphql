@@ -1,0 +1,24 @@
+type GraphqlSchemafirst {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateGraphqlSchemafirstInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateGraphqlSchemafirstInput {
+  id: Int!
+}
+
+type Query {
+  graphqlSchemafirst: [GraphqlSchemafirst]!
+  graphqlSchemafirst(id: Int!): GraphqlSchemafirst
+}
+
+type Mutation {
+  createGraphqlSchemafirst(createGraphqlSchemafirstInput: CreateGraphqlSchemafirstInput!): GraphqlSchemafirst!
+  updateGraphqlSchemafirst(updateGraphqlSchemafirstInput: UpdateGraphqlSchemafirstInput!): GraphqlSchemafirst!
+  removeGraphqlSchemafirst(id: Int!): GraphqlSchemafirst
+}
